@@ -1,0 +1,33 @@
+---
+name: "geodash-plugin-handlers"
+controllers: []
+directives: []
+enumerations: []
+templates: []
+filters: []
+handlers:
+  - clickedOnMap.js
+  - filterChanged.js
+  - hideLayer.js
+  - hideLayers.js
+  - layerLoaded.js
+  - requestToggleComponent.js
+  - selectStyle.js
+  - showLayer.js
+  - showLayers.js
+  - stateChanged.js
+  - switchBaseLayer.js
+  #- leaflet/toggleComponent.js
+  - ol3/toggleComponent.js
+  - toggleFeatureLayer.js
+  - toggleControl.js
+  - viewChanged.js
+  - zoomIn.js
+  - zoomOut.js
+  - zoomToLayer.js
+  - zoomToLocation.js
+  - ol3/printMap.js
+  - ol3/toggleFullScreen.js
+schemas: []
+modals: []
+less: []
