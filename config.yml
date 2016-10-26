@@ -26,6 +26,7 @@ handlers:
   - zoomOut.js
   - zoomToLayer.js
   - zoomToLocation.js
+  - flyToLocation.js
   - ol3/printMap.js
   - ol3/toggleFullScreen.js
 schemas: []
