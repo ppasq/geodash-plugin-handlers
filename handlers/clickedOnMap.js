@@ -96,7 +96,7 @@ geodash.handlers["clickedOnMap"] = function($scope, $interpolate, $http, $q, eve
           var fl = featurelayers_by_featuretype[featureAndLocation.feature.featuretype] || featurelayers_by_featuretype["geonode:"+featureAndLocation.feature.featuretype];
           $scope.$broadcast("openPopup", {
             'featureLayer': fl,
-            'feature': featureAndLocation.feature,
+            'feature': geodash.normalize.feature(featureAndLocation.feature),
             'location': geodash.normalize.point(featureAndLocation.location)
           });
         }
