@@ -68,9 +68,10 @@ geodash.handlers["clickedOnMap"] = function($scope, $interpolate, $http, $q, eve
           'location': geodash.normalize.point(ol.proj.toLonLat(map.getCoordinateFromPixel([args.pixel.x, args.pixel.y]), map.getView().getProjection()))
         };
       },
-      null,
-      function(layer) {
-        return $.inArray(layer.get('id'), featurelayers_geojson) != -1;
+      {
+        layerFilter: function(layer) {
+          return $.inArray(layer.get('id'), featurelayers_geojson) != -1;
+        }
       }
     );
   }
@@ -102,13 +103,15 @@ geodash.handlers["clickedOnMap"] = function($scope, $interpolate, $http, $q, eve
         }
         else
         {
-          $("#popup").popover('destroy');
+          $("#popup").popover('dispose');
+          map.getOverlays().item(0).setPosition(undefined);
         }
       });
     }
     else
     {
-      $("#popup").popover('destroy');
+      $("#popup").popover('dispose');
+      map.getOverlays().item(0).setPosition(undefined);
     }
   }
 };

@@ -31,6 +31,9 @@ handlers:
   - flyToCurrentLocation.js
   - ol3/printMap.js
   - ol3/toggleFullScreen.js
+  - startGeolocation.js
+  - stopGeolocation.js
+  - toggleGeolocation.js
 schemas: []
 modals: []
 less: []
