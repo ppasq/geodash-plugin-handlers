@@ -10,11 +10,13 @@ handlers:
   - filterChanged.js
   - hideLayer.js
   - hideLayers.js
+  - hideModal.js
   - layerLoaded.js
   - requestToggleComponent.js
   - selectStyle.js
   - showLayer.js
   - showLayers.js
+  - showModal.js
   - stateChanged.js
   - switchBaseLayer.js
   #- leaflet/toggleComponent.js
