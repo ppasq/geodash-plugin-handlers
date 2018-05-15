@@ -1,10 +1,7 @@
-geodash.handlers.printMap = function($scope, $interpolate, $http, $q, event, args) {
-    console.log('event', event);
-    console.log('args', args);
-    var $scope = geodash.util.getScope("geodash-main");
-    var data = geodash.var.map.getRenderer().canvas_.toDataURL("image/png");
-    //window.open(data);
-    var newWindow = window.open("", "_blank", "");
-    var html = "<a href=\""+data+"\" download=\"sparc.png\"><img src=\""+data+"\"></a>";
-    newWindow.document.write(html);
+geodash.handlers.printMap = function() {
+  $('#geodash-sidebar-left-charts-chart-popatrisk, #map, .geodash-map-legend-layer').printThis({
+    canvas: true,
+    debug: true,
+    header: "<div style='float:left; height: 1.5cm; width: 2.5cm'><img style='height: 1.5cm; margin-right: 1cm' src='/static/sparc2/build/img/en-emblem.svg'></div><div style='float:left; margin-top: 0;'><h1 style='line-height:1rem'>SPARC</h1><span style='font-size: 1rem; font-weight:300;'>Spatial Risk Calendar</span></h2></div><div style='clear:both; margin-bottom:1cm'></div>"
+  });
 };
