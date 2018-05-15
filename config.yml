@@ -10,11 +10,13 @@ handlers:
   - filterChanged.js
   - hideLayer.js
   - hideLayers.js
+  - hideModal.js
   - layerLoaded.js
   - requestToggleComponent.js
   - selectStyle.js
   - showLayer.js
   - showLayers.js
+  - showModal.js
   - stateChanged.js
   - switchBaseLayer.js
   #- leaflet/toggleComponent.js
@@ -28,8 +30,12 @@ handlers:
   - zoomToLocation.js
   - flyToExtent.js
   - flyToLocation.js
+  - flyToCurrentLocation.js
   - ol3/printMap.js
   - ol3/toggleFullScreen.js
+  - startGeolocation.js
+  - stopGeolocation.js
+  - toggleGeolocation.js
 schemas: []
 modals: []
 less: []
